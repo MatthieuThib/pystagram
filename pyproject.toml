@@ -39,6 +39,10 @@ dependencies = [
 dev = [
     "twine",
 ]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
 
 [project.urls]
 Homepage = "https://github.com/MatthieuThib/pystagram"

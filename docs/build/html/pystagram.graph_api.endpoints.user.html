@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pystagram.graph_api.endpoints.user package &mdash; pystagram 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pystagram.helpers package" href="pystagram.helpers.html" />
+    <link rel="prev" title="pystagram.graph_api.endpoints.oauth.access_token package" href="pystagram.graph_api.endpoints.oauth.access_token.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pystagram
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pystagram</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pystagram.html">pystagram package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pystagram.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="pystagram.basic_display_api.html">pystagram.basic_display_api package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="pystagram.graph_api.html">pystagram.graph_api package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pystagram.helpers.html">pystagram.helpers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pystagram.html#module-pystagram">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pystagram</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">pystagram</a></li>
+          <li class="breadcrumb-item"><a href="pystagram.html">pystagram package</a></li>
+          <li class="breadcrumb-item"><a href="pystagram.graph_api.html">pystagram.graph_api package</a></li>
+          <li class="breadcrumb-item"><a href="pystagram.graph_api.endpoints.html">pystagram.graph_api.endpoints package</a></li>
+      <li class="breadcrumb-item active">pystagram.graph_api.endpoints.user package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pystagram.graph_api.endpoints.user.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pystagram-graph-api-endpoints-user-package">
+<h1>pystagram.graph_api.endpoints.user package<a class="headerlink" href="#pystagram-graph-api-endpoints-user-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.available_catalogs">
+<span id="pystagram-graph-api-endpoints-user-available-catalogs-module"></span><h2>pystagram.graph_api.endpoints.user.available_catalogs module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.available_catalogs" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.available_catalogs.AvailableCatalogs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.available_catalogs.</span></span><span class="sig-name descname"><span class="pre">AvailableCatalogs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.available_catalogs.AvailableCatalogs" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>AvailableCatalogs</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.available_catalogs.AvailableCatalogs.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.catalog_fields.CatalogFields" title="pystagram.graph_api.components.fields.catalog_fields.CatalogFields"><span class="pre">CatalogFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.available_catalogs.AvailableCatalogs.get" title="Link to this definition"></a></dt>
+<dd><p>Get the product catalog in an IG User’s Instagram Shop.
+:param user_id: The ID of the user to get available catalogs from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.catalog_fields.CatalogFields" title="pystagram.graph_api.components.fields.catalog_fields.CatalogFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.catalog_fields.CatalogFields</span></code></a> to get from the available catalogs, defaults to None
+:type fields: Optional[List[Union[str, CatalogFields]]], optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/available_catalogs</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.business_discovery">
+<span id="pystagram-graph-api-endpoints-user-business-discovery-module"></span><h2>pystagram.graph_api.endpoints.user.business_discovery module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.business_discovery" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.business_discovery.BusinessDiscovery">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.business_discovery.</span></span><span class="sig-name descname"><span class="pre">BusinessDiscovery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.business_discovery.BusinessDiscovery" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>BusinessDiscovery</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.business_discovery.BusinessDiscovery.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.user_fields.UserFields" title="pystagram.graph_api.components.fields.user_fields.UserFields"><span class="pre">UserFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.business_discovery.BusinessDiscovery.get" title="Link to this definition"></a></dt>
+<dd><p>Get data about another Instagram Business or Creator Instagram User.
+:param username: The username of the Instagram Business or Creator Instagram User.
+:type username: str
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.user_fields.UserFields" title="pystagram.graph_api.components.fields.user_fields.UserFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.user_fields.UserFields</span></code></a> to get from the user, defaults to None
+:type fields: Optional[List[Union[str, UserFields]]], optional
+:param user_id: The ID of the user to get fields and edges from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.catalog_product_search">
+<span id="pystagram-graph-api-endpoints-user-catalog-product-search-module"></span><h2>pystagram.graph_api.endpoints.user.catalog_product_search module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.catalog_product_search" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.catalog_product_search.CatalogProductSearch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.catalog_product_search.</span></span><span class="sig-name descname"><span class="pre">CatalogProductSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.catalog_product_search.CatalogProductSearch" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>CatalogProductSearch</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.catalog_product_search.CatalogProductSearch.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">catalog_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.catalog_product_search.CatalogProductSearch.get" title="Link to this definition"></a></dt>
+<dd><p>Get a collection of products that match a given search string within the targeted IG User’s Instagram Shop catalog.
+:param catalog_id: The ID of the catalog to search products from, defaults to None
+:type catalog_id: int, optional
+:param q: The search string to match products with, defaults to None
+:type q: Optional[str], optional
+:param user_id: The ID of the user to search products from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/catalog_product_search</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.content_publishing_limit">
+<span id="pystagram-graph-api-endpoints-user-content-publishing-limit-module"></span><h2>pystagram.graph_api.endpoints.user.content_publishing_limit module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.content_publishing_limit" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.content_publishing_limit.ContentPublishingLimit">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.content_publishing_limit.</span></span><span class="sig-name descname"><span class="pre">ContentPublishingLimit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.content_publishing_limit.ContentPublishingLimit" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>ContentPublishingLimit</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.content_publishing_limit.ContentPublishingLimit.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.publishing_limit_fields.PublishingLimitFields" title="pystagram.graph_api.components.fields.publishing_limit_fields.PublishingLimitFields"><span class="pre">PublishingLimitFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">since</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pystagram.graph_api.components.timestamp.html#pystagram.graph_api.components.timestamp.timestamp.Timestamp" title="pystagram.graph_api.components.timestamp.timestamp.Timestamp"><span class="pre">Timestamp</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.strtotime.html#pystagram.graph_api.components.strtotime.strtotime.Strtotime" title="pystagram.graph_api.components.strtotime.strtotime.Strtotime"><span class="pre">Strtotime</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.content_publishing_limit.ContentPublishingLimit.get" title="Link to this definition"></a></dt>
+<dd><p>Get the number of times an IG User has published and IG Container within a given time period.
+:param user_id: The ID of the user to get the content publishing limit from, inferred from the <cite>User</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.publishing_limit_fields.PublishingLimitFields" title="pystagram.graph_api.components.fields.publishing_limit_fields.PublishingLimitFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.publishing_limit_fields.PublishingLimitFields</span></code></a> to get from the user, defaults to None
+:type fields: Optional[List[Union[str, PublishingLimitFields]]], optional
+:param since: The start time to get the content publishing limit from, defaults to None
+:type since: Optional[Union[Timestamp, Strtotime]], optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>User</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/content_publishing_limit</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.insights">
+<span id="pystagram-graph-api-endpoints-user-insights-module"></span><h2>pystagram.graph_api.endpoints.user.insights module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.insights" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.insights.Insights">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.insights.</span></span><span class="sig-name descname"><span class="pre">Insights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.insights.Insights" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>Insights</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.insights.Insights.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="pystagram.graph_api.components.metrics.html#pystagram.graph_api.components.metrics.insight_metrics.InsightMetrics" title="pystagram.graph_api.components.metrics.insight_metrics.InsightMetrics"><span class="pre">InsightMetrics</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">period</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pystagram.graph_api.components.periods.html#pystagram.graph_api.components.periods.periods.Periods" title="pystagram.graph_api.components.periods.periods.Periods"><span class="pre">Periods</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">since</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pystagram.graph_api.components.timestamp.html#pystagram.graph_api.components.timestamp.timestamp.Timestamp" title="pystagram.graph_api.components.timestamp.timestamp.Timestamp"><span class="pre">Timestamp</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.strtotime.html#pystagram.graph_api.components.strtotime.strtotime.Strtotime" title="pystagram.graph_api.components.strtotime.strtotime.Strtotime"><span class="pre">Strtotime</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">until</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pystagram.graph_api.components.timestamp.html#pystagram.graph_api.components.timestamp.timestamp.Timestamp" title="pystagram.graph_api.components.timestamp.timestamp.Timestamp"><span class="pre">Timestamp</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.strtotime.html#pystagram.graph_api.components.strtotime.strtotime.Strtotime" title="pystagram.graph_api.components.strtotime.strtotime.Strtotime"><span class="pre">Strtotime</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.insights.Insights.get" title="Link to this definition"></a></dt>
+<dd><p>Get insights on an Instagram user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metric</strong> (<em>List</em><em>[</em><a class="reference internal" href="pystagram.graph_api.components.metrics.html#pystagram.graph_api.components.metrics.insight_metrics.InsightMetrics" title="pystagram.graph_api.components.metrics.insight_metrics.InsightMetrics"><em>InsightMetrics</em></a><em>]</em>) – A list of <a class="reference internal" href="pystagram.graph_api.components.metrics.html#pystagram.graph_api.components.metrics.insight_metrics.InsightMetrics" title="pystagram.graph_api.components.metrics.insight_metrics.InsightMetrics"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.metrics.insight_metrics.InsightMetrics</span></code></a> to get insights on.</p></li>
+<li><p><strong>period</strong> (<a class="reference internal" href="pystagram.graph_api.components.periods.html#pystagram.graph_api.components.periods.periods.Periods" title="pystagram.graph_api.components.periods.periods.Periods"><em>Periods</em></a>) – The period of time to get insights from.</p></li>
+<li><p><strong>since</strong> (<em>Optional</em><em>[</em><em>Union</em><em>[</em><a class="reference internal" href="pystagram.graph_api.components.timestamp.html#pystagram.graph_api.components.timestamp.timestamp.Timestamp" title="pystagram.graph_api.components.timestamp.timestamp.Timestamp"><em>Timestamp</em></a><em>, </em><a class="reference internal" href="pystagram.graph_api.components.strtotime.html#pystagram.graph_api.components.strtotime.strtotime.Strtotime" title="pystagram.graph_api.components.strtotime.strtotime.Strtotime"><em>Strtotime</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – The start time of the insights, defaults to None</p></li>
+<li><p><strong>until</strong> (<em>Optional</em><em>[</em><em>Union</em><em>[</em><a class="reference internal" href="pystagram.graph_api.components.timestamp.html#pystagram.graph_api.components.timestamp.timestamp.Timestamp" title="pystagram.graph_api.components.timestamp.timestamp.Timestamp"><em>Timestamp</em></a><em>, </em><a class="reference internal" href="pystagram.graph_api.components.strtotime.html#pystagram.graph_api.components.strtotime.strtotime.Strtotime" title="pystagram.graph_api.components.strtotime.strtotime.Strtotime"><em>Strtotime</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – The end time of the insights, defaults to None</p></li>
+<li><p><strong>user_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The ID of the user to get insights from, inferred from the <cite>User</cite> instance if None, defaults to None</p></li>
+<li><p><strong>access_token</strong> (<em>str</em><em>, </em><em>optional</em>) – The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The response from the <cite>GET /{user-id}/insights</cite> endpoint.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.live_media">
+<span id="pystagram-graph-api-endpoints-user-live-media-module"></span><h2>pystagram.graph_api.endpoints.user.live_media module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.live_media" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.live_media.LiveMedia">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.live_media.</span></span><span class="sig-name descname"><span class="pre">LiveMedia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.live_media.LiveMedia" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>LiveMedia</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.live_media.LiveMedia.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.media_fields.MediaFields" title="pystagram.graph_api.components.fields.media_fields.MediaFields"><span class="pre">MediaFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">since</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pystagram.graph_api.components.timestamp.html#pystagram.graph_api.components.timestamp.timestamp.Timestamp" title="pystagram.graph_api.components.timestamp.timestamp.Timestamp"><span class="pre">Timestamp</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.strtotime.html#pystagram.graph_api.components.strtotime.strtotime.Strtotime" title="pystagram.graph_api.components.strtotime.strtotime.Strtotime"><span class="pre">Strtotime</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">until</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pystagram.graph_api.components.timestamp.html#pystagram.graph_api.components.timestamp.timestamp.Timestamp" title="pystagram.graph_api.components.timestamp.timestamp.Timestamp"><span class="pre">Timestamp</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.strtotime.html#pystagram.graph_api.components.strtotime.strtotime.Strtotime" title="pystagram.graph_api.components.strtotime.strtotime.Strtotime"><span class="pre">Strtotime</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.live_media.LiveMedia.get" title="Link to this definition"></a></dt>
+<dd><p>Get a collection of live video IG Media on an IG User.
+:param user_id: The ID of the user to get live videos from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.media_fields.MediaFields" title="pystagram.graph_api.components.fields.media_fields.MediaFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.media_fields.MediaFields</span></code></a> to get from the live videos, defaults to None
+:type fields: Optional[List[Union[str, MediaFields]]], optional
+:param since: The Unix timestamp of the earliest live video to get, defaults to None
+:type since: Optional[Union[Timestamp, Strtotime]], optional
+:param until: The Unix timestamp of the latest live video to get, defaults to None
+:type until: Optional[Union[Timestamp, Strtotime]], optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/live_videos</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.media">
+<span id="pystagram-graph-api-endpoints-user-media-module"></span><h2>pystagram.graph_api.endpoints.user.media module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.media" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.media.Media">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.media.</span></span><span class="sig-name descname"><span class="pre">Media</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.media.Media" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>Media</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code>    :param max_pages: The maximum number of pages to get from paginated endpoints, defaults to 5
+:type max_pages: int, optional</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.media.Media.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="pystagram.graph_api.components.containers.html#pystagram.graph_api.components.containers.base_container.BaseContainer" title="pystagram.graph_api.components.containers.base_container.BaseContainer"><span class="pre">BaseContainer</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.media.Media.create" title="Link to this definition"></a></dt>
+<dd><p>Create an image, carousel, story or reel Instagram Container.
+:param container: The container to create on the Instagram user. Can be an instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">ImageContainer</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">VideoContainer</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">CarouselContainer</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">StoryContainer</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">ReelContainer</span></code> classes.
+:type container: Type[BaseContainer]
+:param user_id: The ID of the user to create the container on, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>POST /{user-id}/media</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.media.Media.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.media.Media.delete" title="Link to this definition"></a></dt>
+<dd><p>[Not Supported] Delete an Instagram Media.
+:raises InstagramApiNotSupportedError: Instagram user media deletion is not supported by the Instagram Graph API.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.media.Media.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">before</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.media.Media.get" title="Link to this definition"></a></dt>
+<dd><p>Get a collection of IG Media on an IG User. Paginated endpoint.
+:param user_id: The ID of the user to get media from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:param limit: The number of media to get per page, defaults to 25
+:type limit: int, optional
+:param after: The cursor to get the next page of media, defaults to None
+:type after: str, optional
+:param before: The cursor to get the previous page of media, defaults to None
+:type before: str, optional
+:return: The response from the <cite>GET /{user-id}/media</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.media.Media.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.media.Media.update" title="Link to this definition"></a></dt>
+<dd><p>[Not Supported] Update an Instagram Media.
+:raises InstagramApiEndpointError: User media update is only supported by the Media node</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.media_publish">
+<span id="pystagram-graph-api-endpoints-user-media-publish-module"></span><h2>pystagram.graph_api.endpoints.user.media_publish module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.media_publish" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.media_publish.MediaPublish">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.media_publish.</span></span><span class="sig-name descname"><span class="pre">MediaPublish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.media_publish.MediaPublish" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>MediaPublish</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.media_publish.MediaPublish.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.media_publish.MediaPublish.create" title="Link to this definition"></a></dt>
+<dd><p>Publish an Instagram Media Container.
+:param container_id: The ID of the container to publish on the Instagram user.
+:type container_id: str
+:param user_id: The ID of the user to publish the container on, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>POST /{user-id}/media_publish</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.mentionned_comment">
+<span id="pystagram-graph-api-endpoints-user-mentionned-comment-module"></span><h2>pystagram.graph_api.endpoints.user.mentionned_comment module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.mentionned_comment" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.mentionned_comment.MentionedComment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.mentionned_comment.</span></span><span class="sig-name descname"><span class="pre">MentionedComment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.mentionned_comment.MentionedComment" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>MentionedComment</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.mentionned_comment.MentionedComment.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.comment_fields.CommentFields" title="pystagram.graph_api.components.fields.comment_fields.CommentFields"><span class="pre">CommentFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.mentionned_comment.MentionedComment.get" title="Link to this definition"></a></dt>
+<dd><p>Get data on an Instagram Comment in which an Instagram User has been &#64;mentioned by another Instagram user. Paginated endpoint.
+:param comment_id: The ID of the comment to get data from.
+:type comment_id: str
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.comment_fields.CommentFields" title="pystagram.graph_api.components.fields.comment_fields.CommentFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.comment_fields.CommentFields</span></code></a> to get from the comment, defaults to None
+:type fields: Optional[List[Union[str, CommentFields]]], optional
+:param user_id: The ID of the user to get the mentioned comment from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/mentioned_comment</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.mentionned_media">
+<span id="pystagram-graph-api-endpoints-user-mentionned-media-module"></span><h2>pystagram.graph_api.endpoints.user.mentionned_media module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.mentionned_media" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.mentionned_media.MentionedMedia">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.mentionned_media.</span></span><span class="sig-name descname"><span class="pre">MentionedMedia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.mentionned_media.MentionedMedia" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>MentionedMedia</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.mentionned_media.MentionedMedia.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">media_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.media_fields.MediaFields" title="pystagram.graph_api.components.fields.media_fields.MediaFields"><span class="pre">MediaFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.mentionned_media.MentionedMedia.get" title="Link to this definition"></a></dt>
+<dd><p>Get data on an Instagram Media in which an Instagram User has been &#64;mentioned in a caption by another Instagram user. Paginated endpoint.
+:param media_id: The ID of the media to get data from.
+:type media_id: int
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.media_fields.MediaFields" title="pystagram.graph_api.components.fields.media_fields.MediaFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.media_fields.MediaFields</span></code></a> to get from the media, defaults to None
+:type fields: Optional[List[Union[str, MediaFields]]], optional
+:param user_id: The ID of the user to get the mentioned media from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/mentioned_media</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.mentions">
+<span id="pystagram-graph-api-endpoints-user-mentions-module"></span><h2>pystagram.graph_api.endpoints.user.mentions module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.mentions" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.mentions.Mentions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.mentions.</span></span><span class="sig-name descname"><span class="pre">Mentions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.mentions.Mentions" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>Mentions</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.mentions.Mentions.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">media_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.mentions.Mentions.create" title="Link to this definition"></a></dt>
+<dd><p>Creates an Instagram Comment on an Instagram Media or Instagram comment in which an Instagram User has been &#64;mentioned in.
+:param media_id: The ID of the media where the user was mentioned.
+:type media_id: str
+:param message: The comment message.
+:type message: str
+:param user_id: The ID of the user to mention, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>POST /{user-id}/mentions</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.product_appeal">
+<span id="pystagram-graph-api-endpoints-user-product-appeal-module"></span><h2>pystagram.graph_api.endpoints.user.product_appeal module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.product_appeal" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.product_appeal.</span></span><span class="sig-name descname"><span class="pre">ProductAppeal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>ProductAppeal</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">appeal_reason</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">product_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal.create" title="Link to this definition"></a></dt>
+<dd><p>Create an appeal for a rejected product.
+:param appeal_reason: The reason for the appeal.
+:type appeal_reason: str
+:param product_id: The ID of the product to appeal.
+:type product_id: str
+:param user_id: The ID of the user to appeal the product for, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>POST /{user-id}/product_appeal</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal.get" title="Link to this definition"></a></dt>
+<dd><p>Get appeal status of a rejected product.
+:param product_id: The ID of the product to get appeal status from.
+:type product_id: str
+:param user_id: The ID of the user to get the appeal status from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/product_appeal</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.recently_searched_hashtags">
+<span id="pystagram-graph-api-endpoints-user-recently-searched-hashtags-module"></span><h2>pystagram.graph_api.endpoints.user.recently_searched_hashtags module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.recently_searched_hashtags" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.recently_searched_hashtags.RecentlySearchedHashtags">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.recently_searched_hashtags.</span></span><span class="sig-name descname"><span class="pre">RecentlySearchedHashtags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.recently_searched_hashtags.RecentlySearchedHashtags" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>RecentlySearchedHashtags</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.recently_searched_hashtags.RecentlySearchedHashtags.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.recently_searched_hashtags.RecentlySearchedHashtags.get" title="Link to this definition"></a></dt>
+<dd><p>Get the hashtags that an Instagram User has queried using the Instagram Hashtags endpoint within the last 7 days.
+:param user_id: The ID of the user to get the recently searched hashtags from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param limit: The number of hashtags to get per page, defaults to None
+:type limit: int, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/recently_searched_hashtags</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.stories">
+<span id="pystagram-graph-api-endpoints-user-stories-module"></span><h2>pystagram.graph_api.endpoints.user.stories module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.stories" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.stories.Stories">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.stories.</span></span><span class="sig-name descname"><span class="pre">Stories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.stories.Stories" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>Stories</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.stories.Stories.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.stories.Stories.create" title="Link to this definition"></a></dt>
+<dd><p>[Not Supported] Create a story Instagram Media.
+:raises InstagramApiEndpointError: User story creation is supported by the User Media node</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.stories.Stories.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.stories.Stories.delete" title="Link to this definition"></a></dt>
+<dd><p>[Not Supported] Delete a story Instagram Media.
+:raises InstagramApiNotSupportedError: Instagram user story deletion is not supported by the Instagram Graph API.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.stories.Stories.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.stories.Stories.get" title="Link to this definition"></a></dt>
+<dd><p>Get a collection of story Instagram Media objects on an Instagram User.
+:param user_id: The ID of the user to get stories from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:return: The response from the <cite>GET /{user-id}/stories</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.stories.Stories.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.stories.Stories.update" title="Link to this definition"></a></dt>
+<dd><p>[Not Supported] Update a story Instagram Media.
+:raises InstagramApiNotSupportedError: Instagram user story update is not supported by the Instagram Graph API.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.tags">
+<span id="pystagram-graph-api-endpoints-user-tags-module"></span><h2>pystagram.graph_api.endpoints.user.tags module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.tags" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.tags.Tags">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.tags.</span></span><span class="sig-name descname"><span class="pre">Tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pystagram.graph_api.endpoints.user.user.User" title="pystagram.graph_api.endpoints.user.user.User"><span class="pre">User</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.tags.Tags" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>Tags</cite> node of the Instagram Graph API.
+:param user: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> class.
+:type user: <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.tags.Tags.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.media_fields.MediaFields" title="pystagram.graph_api.components.fields.media_fields.MediaFields"><span class="pre">MediaFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.tags.Tags.get" title="Link to this definition"></a></dt>
+<dd><p>Get a collection of Instagram Media objects in which an Instagram User has been tagged by another Instagram user.
+:param user_id: The ID of the user to get tagged media from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.media_fields.MediaFields" title="pystagram.graph_api.components.fields.media_fields.MediaFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.media_fields.MediaFields</span></code></a> to get from the tagged media, defaults to None
+:type fields: Optional[List[Union[str, MediaFields]]], optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}/tags</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user.user">
+<span id="pystagram-graph-api-endpoints-user-user-module"></span><h2>pystagram.graph_api.endpoints.user.user module<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user.user" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pystagram.graph_api.endpoints.user.user.</span></span><span class="sig-name descname"><span class="pre">User</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph_api</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pystagram.graph_api.html#pystagram.graph_api.graph_api.PystagramGraphApi" title="pystagram.graph_api.graph_api.PystagramGraphApi"><span class="pre">PystagramGraphApi</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <cite>User</cite> node of the Instagram Graph API.
+:param graph_api: An instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">InstagramGraphApi</span></code> class.
+:type graph_api: <code class="xref py py-class docutils literal notranslate"><span class="pre">InstagramGraphApi</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.available_catalogs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">available_catalogs</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.available_catalogs" title="Link to this definition"></a></dt>
+<dd><p>The <cite>AvailableCatalogs</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.available_catalogs.AvailableCatalogs" title="pystagram.graph_api.endpoints.user.available_catalogs.AvailableCatalogs"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.available_catalogs.AvailableCatalogs</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.business_discovery">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">business_discovery</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.business_discovery" title="Link to this definition"></a></dt>
+<dd><p>The <cite>BusinessDiscovery</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.business_discovery.BusinessDiscovery" title="pystagram.graph_api.endpoints.user.business_discovery.BusinessDiscovery"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.business_discovery.BusinessDiscovery</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.catalog_product_search">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">catalog_product_search</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.catalog_product_search" title="Link to this definition"></a></dt>
+<dd><p>The <cite>CatalogProductSearch</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.catalog_product_search.CatalogProductSearch" title="pystagram.graph_api.endpoints.user.catalog_product_search.CatalogProductSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.catalog_product_search.CatalogProductSearch</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.content_publishing_limit">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">content_publishing_limit</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.content_publishing_limit" title="Link to this definition"></a></dt>
+<dd><p>The <cite>ContentPublishingLimit</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.content_publishing_limit.ContentPublishingLimit" title="pystagram.graph_api.endpoints.user.content_publishing_limit.ContentPublishingLimit"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.content_publishing_limit.ContentPublishingLimit</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.user_fields.UserFields" title="pystagram.graph_api.components.fields.user_fields.UserFields"><span class="pre">UserFields</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.get" title="Link to this definition"></a></dt>
+<dd><p>Get fields and edges on an Instagram Business or Creator Account.
+:param user_id: The ID of the user to get fields and edges from, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type user_id: str, optional
+:param fields: A list of <a class="reference internal" href="pystagram.graph_api.components.fields.html#pystagram.graph_api.components.fields.user_fields.UserFields" title="pystagram.graph_api.components.fields.user_fields.UserFields"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.components.fields.user_fields.UserFields</span></code></a> to get from the user, defaults to None
+:type fields: Optional[List[Union[str, UserFields]]], optional
+:param access_token: The access token of the Instagram user, inferred from the <cite>InstagramGraphApi</cite> instance if None, defaults to None
+:type access_token: str, optional
+:return: The response from the <cite>GET /{user-id}</cite> endpoint.
+:rtype: <a class="reference internal" href="pystagram.helpers.api_client.html#pystagram.helpers.api_client.api_response.PystagramApiResponse" title="pystagram.helpers.api_client.api_response.PystagramApiResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.helpers.api_client.api_response.PystagramApiResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.insights">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">insights</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.insights" title="Link to this definition"></a></dt>
+<dd><p>The <cite>Insights</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.insights.Insights" title="pystagram.graph_api.endpoints.user.insights.Insights"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.insights.Insights</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.live_media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">live_media</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.live_media" title="Link to this definition"></a></dt>
+<dd><p>The <cite>LiveMedia</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.live_media.LiveMedia" title="pystagram.graph_api.endpoints.user.live_media.LiveMedia"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.live_media.LiveMedia</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.media" title="Link to this definition"></a></dt>
+<dd><p>The <cite>Media</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.media.Media" title="pystagram.graph_api.endpoints.user.media.Media"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.media.Media</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.media_publish">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media_publish</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.media_publish" title="Link to this definition"></a></dt>
+<dd><p>The <cite>MediaPublish</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.media_publish.MediaPublish" title="pystagram.graph_api.endpoints.user.media_publish.MediaPublish"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.media_publish.MediaPublish</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.mentioned_comment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mentioned_comment</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.mentioned_comment" title="Link to this definition"></a></dt>
+<dd><p>The <cite>MentionedComment</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.mentionned_comment.MentionedComment" title="pystagram.graph_api.endpoints.user.mentionned_comment.MentionedComment"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.mentionned_comment.MentionedComment</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.mentioned_media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mentioned_media</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.mentioned_media" title="Link to this definition"></a></dt>
+<dd><p>The <cite>MentionedMedia</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.mentionned_media.MentionedMedia" title="pystagram.graph_api.endpoints.user.mentionned_media.MentionedMedia"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.mentionned_media.MentionedMedia</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.mentions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mentions</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.mentions" title="Link to this definition"></a></dt>
+<dd><p>The <cite>Mentions</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.mentions.Mentions" title="pystagram.graph_api.endpoints.user.mentions.Mentions"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.mentions.Mentions</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.product_appeal">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">product_appeal</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.product_appeal" title="Link to this definition"></a></dt>
+<dd><p>The <cite>ProductAppeal</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal" title="pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.product_appeal.ProductAppeal</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.recently_searched_hashtags">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">recently_searched_hashtags</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.recently_searched_hashtags" title="Link to this definition"></a></dt>
+<dd><p>The <cite>RecentlySearchedHashtags</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.recently_searched_hashtags.RecentlySearchedHashtags" title="pystagram.graph_api.endpoints.user.recently_searched_hashtags.RecentlySearchedHashtags"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.recently_searched_hashtags.RecentlySearchedHashtags</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.stories">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stories</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.stories" title="Link to this definition"></a></dt>
+<dd><p>The <cite>Stories</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.stories.Stories" title="pystagram.graph_api.endpoints.user.stories.Stories"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.stories.Stories</span></code></a> class for additional details.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pystagram.graph_api.endpoints.user.user.User.tags">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tags</span></span><a class="headerlink" href="#pystagram.graph_api.endpoints.user.user.User.tags" title="Link to this definition"></a></dt>
+<dd><p>The <cite>Tags</cite> node of the Instagram Graph API.
+See the <a class="reference internal" href="#pystagram.graph_api.endpoints.user.tags.Tags" title="pystagram.graph_api.endpoints.user.tags.Tags"><code class="xref py py-class docutils literal notranslate"><span class="pre">pystagram.graph_api.endpoints.user.tags.Tags</span></code></a> class for additional details.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pystagram.graph_api.endpoints.user">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pystagram.graph_api.endpoints.user" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pystagram.graph_api.endpoints.oauth.access_token.html" class="btn btn-neutral float-left" title="pystagram.graph_api.endpoints.oauth.access_token package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pystagram.helpers.html" class="btn btn-neutral float-right" title="pystagram.helpers package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Matthieu THIBAUT.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
