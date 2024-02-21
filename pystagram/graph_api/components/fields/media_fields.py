@@ -8,7 +8,7 @@ class MediaFields(Fields):
     CAPTION = "caption"
     CHILDREN = "children"
     COMMENTS_COUNT = "comments_count"
-    COPYRIGHT_CHECK_INFORMATION_STATUS = "copyright_check_information.status"
+    COPYRIGHT_CHECK_INFORMATION = "copyright_check_information"
     ID = "id"
     IG_ID = "ig_id"
     IS_COMMENT_ENABLED = "is_comment_enabled"
@@ -23,4 +23,3 @@ class MediaFields(Fields):
     THUMBNAIL_URL = "thumbnail_url"
     TIMESTAMP = "timestamp"
     USERNAME = "username"
-    VIDEO_TITLE = "video_title"

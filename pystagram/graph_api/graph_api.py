@@ -67,8 +67,8 @@ class PystagramGraphApi(PystagramBaseApiClient):
                 access_token=self._access_token,
             )
             .data.get("data", list(dict()))[0]
-            .get("instagram_business_account", dict())
-            .get("id", 0)
+            .get(AccountFields.INSTAGRAM_BUSINESS_ACCOUNT, dict())
+            .get(AccountFields.ID, 0)
         )
 
     @property
