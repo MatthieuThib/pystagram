@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pystagram"
-version = "0.1.0"
+version = "0.2"
 authors = [
   { name="Matthieu THIBAUT", email="matthieu_thibaut@icloud.com" },
 ]
@@ -13,7 +13,31 @@ readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.8"
 classifiers = [
+    "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+]
+keywords = [
+    "meta",
+    "facebook",
+    "instagram",
+    "api",
+    "wrapper",
+    "pystagram",
+    "instagram-api",
+    "graph-api",
+    "basic-display-api",
+]
+dependencies = [
+    "requests"
+]
+
+[project.optional-dependencies]
+dev = [
+    "twine",
 ]
 
 [project.urls]
