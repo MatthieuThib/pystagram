@@ -26,7 +26,7 @@ class Comment:
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
         """
         params = {
-            "fields": fields if isinstance(fields, str) else ",".join(fields),
+            "fields": None if fields is None else (fields if isinstance(fields, str) else ",".join(fields)),
             "access_token": access_token or self.graph_api._access_token,
         }
         return self.graph_api.api_request(method="GET", endpoint=f"/{comment_id}", params=params)

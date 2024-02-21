@@ -25,7 +25,7 @@ class Tags:
         """
         user_id = user_id or self.user.graph_api.user_id
         params = {
-            "fields": fields if isinstance(fields, str) else ",".join(fields),
+            "fields": None if fields is None else (fields if isinstance(fields, str) else ",".join(fields)),
             "access_token": access_token or self.user.graph_api._access_token,
         }
         return self.user.graph_api.api_request(method="GET", endpoint=f"/{user_id}/tags", params=params)

@@ -29,7 +29,7 @@ class ContentPublishingLimit:
         """
         user_id = user_id or self.user.graph_api.user_id
         params = {
-            "fields": fields if isinstance(fields, str) else ",".join(fields),
+            "fields": None if fields is None else (fields if isinstance(fields, str) else ",".join(fields)),
             "since": since,
             "access_token": access_token or self.user.graph_api._access_token,
         }

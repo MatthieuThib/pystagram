@@ -27,7 +27,7 @@ class RecentMedia:
         """
         params = {
             "user_id": user_id or self.hashtag.graph_api.user_id,
-            "fields": fields if isinstance(fields, str) else ",".join(fields),
+            "fields": None if fields is None else (fields if isinstance(fields, str) else ",".join(fields)),
             "access_token": access_token or self.hashtag.graph_api._access_token,
         }
         return self.hashtag.graph_api.api_request(method="GET", endpoint=f"/{hashtag_id}/recent_media", params=params)
