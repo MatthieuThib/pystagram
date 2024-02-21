@@ -37,8 +37,8 @@ class PystagramGraphApi(PystagramBaseApiClient):
     API_VERSION: str = "v18.0"
     """ The version of the Instagram Graph API."""
 
-    MAX_PAGES: int = 5
-    """ The maximum number of pages to get from paginated endpoints."""
+    MAX_PAGES: int = None
+    """ The maximum number of pages to get from paginated endpoints, defaults to None (no limit)."""
 
     def __init__(
         self,
