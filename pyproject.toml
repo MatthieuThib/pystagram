@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pystagram"
-version = "0.2"
+version = "0.2.1"
 authors = [
   { name="Matthieu THIBAUT", email="matthieu_thibaut@icloud.com" },
 ]
