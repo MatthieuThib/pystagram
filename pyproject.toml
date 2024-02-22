@@ -18,7 +18,18 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Typing :: Typed",
     "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Telecommunications Industry",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Natural Language :: English",
 ]
 keywords = [
     "meta",
@@ -39,6 +50,9 @@ dependencies = [
 dev = [
     "twine",
 ]
+test = [
+    "pytest",
+]
 docs = [
     "sphinx",
     "sphinx-rtd-theme",
@@ -46,4 +60,6 @@ docs = [
 
 [project.urls]
 Homepage = "https://github.com/MatthieuThib/pystagram"
+Source = "https://github.com/MatthieuThib/pystagram"
 Issues = "https://github.com/MatthieuThib/pystagram/issues"
+Documentation = "https://pystagram.readthedocs.io/en/latest/"
