@@ -26,4 +26,4 @@ class HashtagSearch:
             "user_id": user_id or self.graph_api.user_id,
             "access_token": access_token or self.graph_api._access_token,
         }
-        return self.graph_api.api_request(method="GET", endpoint=f"/hashtag_search", params=params)
+        return self.graph_api.api_request(method="GET", endpoint=f"/ig_hashtag_search", params=params)
