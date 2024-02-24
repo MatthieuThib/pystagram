@@ -20,7 +20,7 @@ class Container:
         :type container_id: int
         :param fields: A list of :class:`pystagram.graph_api.components.fields.container_fields.ContainerFields` to get from the container, defaults to None
         :type fields: Optional[List[Union[str, ContainerFields]]], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{container-id}` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

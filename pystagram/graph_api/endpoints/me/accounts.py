@@ -17,7 +17,7 @@ class Accounts:
         This endpoint translates to GET /{user-id}/accounts, based on the User ID identified by the access token used in the query.
         :param fields: A list of :class:`pystagram.graph_api.components.fields.account_fields.AccountFields` to get from the Accounts node, defaults to None
         :type fields: Optional[List[Union[str, AccountFields]]], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /me/accounts` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

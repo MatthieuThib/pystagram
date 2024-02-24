@@ -15,11 +15,11 @@ class AccessToken:
         Gets a long-lived user access token from a short-lived user access token.
         :param grant_type: The type of grant to request, defaults to "fb_exchange_token"
         :type grant_type: str, optional
-        :param client_id: The app ID of the Instagram app, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param client_id: The app ID of the Instagram app, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type client_id: int, optional
-        :param client_secret: The app secret of the Instagram app, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param client_secret: The app secret of the Instagram app, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type client_secret: str, optional
-        :param fb_exchange_token: The short-lived user access token, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param fb_exchange_token: The short-lived user access token, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type fb_exchange_token: str, optional
         :return: The response from the `GET /oauth/access_token` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

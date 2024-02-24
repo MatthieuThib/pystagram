@@ -20,7 +20,7 @@ class Comment:
         :type comment_id: str
         :param fields: A list of :class:`pystagram.graph_api.components.fields.comment_fields.CommentFields` to get from the Comment node, defaults to None
         :type fields: Optional[List[Union[str, CommentFields]]], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{comment-id}` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
@@ -43,7 +43,7 @@ class Comment:
         :type comment_id: str
         :param hide: Whether to hide the comment, defaults to False
         :type hide: Optional[bool], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `POST /{comment-id}` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
@@ -58,7 +58,7 @@ class Comment:
         """ Delete an Instagram comment.
         :param comment_id: The ID of the Instagram comment to delete.
         :type comment_id: str
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `DELETE /{comment-id}` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

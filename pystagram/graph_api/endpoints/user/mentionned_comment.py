@@ -20,9 +20,9 @@ class MentionedComment:
         :type comment_id: str
         :param fields: A list of :class:`pystagram.graph_api.components.fields.comment_fields.CommentFields` to get from the comment, defaults to None
         :type fields: Optional[List[Union[str, CommentFields]]], optional
-        :param user_id: The ID of the user to get the mentioned comment from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to get the mentioned comment from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{user-id}/mentioned_comment` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

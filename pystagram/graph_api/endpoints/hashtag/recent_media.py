@@ -16,11 +16,11 @@ class RecentMedia:
         """ Get a list of the most recently published photo and video Instagram Media objects published with a specific hashtag.
         :param hashtag_id: The ID of the hashtag to get recent media from.
         :type hashtag_id: str
-        :param user_id: The ID of the Instagram user performing the query, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the Instagram user performing the query, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
         :param fields: A list of :class:`pystagram.graph_api.components.fields.media_fields.MediaFields` to get from the recent media, defaults to None
         :type fields: Optional[List[Union[str, MediaFields]]], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{hashtag-id}/recent_media` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

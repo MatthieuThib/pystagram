@@ -14,9 +14,9 @@ class ProductAppeal:
         """ Get appeal status of a rejected product.
         :param product_id: The ID of the product to get appeal status from.
         :type product_id: str
-        :param user_id: The ID of the user to get the appeal status from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to get the appeal status from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{user-id}/product_appeal` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
@@ -34,9 +34,9 @@ class ProductAppeal:
         :type appeal_reason: str
         :param product_id: The ID of the product to appeal.
         :type product_id: str
-        :param user_id: The ID of the user to appeal the product for, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to appeal the product for, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `POST /{user-id}/product_appeal` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

@@ -14,9 +14,9 @@ class HashtagSearch:
         """ Get the id of an Instagram hashtag. IDs are both static and global (i.e, the ID for #bluebottle will always be 17843857450040591 for all apps and all app users).
         :param q: The hashtag to search for.
         :type q: str
-        :param user_id: The ID of the Instagram user to get recent media from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the Instagram user to get recent media from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /hashtag_search` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

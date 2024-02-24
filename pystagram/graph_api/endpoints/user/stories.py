@@ -14,9 +14,9 @@ class Stories:
 
     def get(self, user_id: Optional[str] = None, access_token: Optional[str] = None):
         """ Get a collection of story Instagram Media objects on an Instagram User.
-        :param user_id: The ID of the user to get stories from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to get stories from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :return: The response from the `GET /{user-id}/stories` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
         """

@@ -20,9 +20,9 @@ class MentionedMedia:
         :type media_id: int
         :param fields: A list of :class:`pystagram.graph_api.components.fields.media_fields.MediaFields` to get from the media, defaults to None
         :type fields: Optional[List[Union[str, MediaFields]]], optional
-        :param user_id: The ID of the user to get the mentioned media from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to get the mentioned media from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{user-id}/mentioned_media` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

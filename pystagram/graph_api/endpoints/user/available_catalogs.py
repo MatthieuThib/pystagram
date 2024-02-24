@@ -14,11 +14,11 @@ class AvailableCatalogs:
 
     def get(self, user_id: Optional[str] = None, fields: Optional[List[Union[str, CatalogFields]]] = None, access_token: Optional[str] = None):
         """ Get the product catalog in an IG User's Instagram Shop.
-        :param user_id: The ID of the user to get available catalogs from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to get available catalogs from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
         :param fields: A list of :class:`pystagram.graph_api.components.fields.catalog_fields.CatalogFields` to get from the available catalogs, defaults to None
         :type fields: Optional[List[Union[str, CatalogFields]]], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{user-id}/available_catalogs` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

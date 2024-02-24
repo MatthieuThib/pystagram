@@ -18,9 +18,9 @@ class BusinessDiscovery:
         :type username: str
         :param fields: A list of :class:`pystagram.graph_api.components.fields.user_fields.UserFields` to get from the user, defaults to None
         :type fields: Optional[List[Union[str, UserFields]]], optional
-        :param user_id: The ID of the user to get fields and edges from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to get fields and edges from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{user-id}` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

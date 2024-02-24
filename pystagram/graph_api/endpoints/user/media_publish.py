@@ -14,9 +14,9 @@ class MediaPublish:
         """ Publish an Instagram Media Container.
         :param container_id: The ID of the container to publish on the Instagram user.
         :type container_id: str
-        :param user_id: The ID of the user to publish the container on, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to publish the container on, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `POST /{user-id}/media_publish` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

@@ -14,7 +14,7 @@ class Children:
         """ Get a list of Instagram Media objects on an Instagram album Media object.
         :param media_id: The ID of the media to get children from.
         :type media_id: str
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{media-id}/children` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

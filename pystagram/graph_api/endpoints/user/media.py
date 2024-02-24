@@ -19,9 +19,9 @@ class Media:
     @cursor_paginated
     def get(self, user_id: Optional[str] = None, access_token: Optional[str] = None, limit: Optional[int] = 25, after: Optional[str] = None, before: Optional[str] = None):
         """ Get a collection of IG Media on an IG User. Paginated endpoint.
-        :param user_id: The ID of the user to get media from, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to get media from, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :param limit: The number of media to get per page, defaults to 25
         :type limit: int, optional
@@ -45,9 +45,9 @@ class Media:
         """ Create an image, carousel, story or reel Instagram Container.
         :param container: The container to create on the Instagram user. Can be an instance of the :class:`ImageContainer`, :class:`VideoContainer`, :class:`CarouselContainer`, :class:`StoryContainer` or :class:`ReelContainer` classes.
         :type container: Type[BaseContainer]
-        :param user_id: The ID of the user to create the container on, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to create the container on, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `POST /{user-id}/media` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

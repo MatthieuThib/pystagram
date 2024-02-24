@@ -16,7 +16,7 @@ class ProductTags:
         """ Get a collection of product tags on an Instagram Media.
         :param media_id: The ID of the media to get product tags from.
         :type media_id: str
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{media-id}/product_tags` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
@@ -32,7 +32,7 @@ class ProductTags:
         :type media_id: str
         :param product_tags: A list of :class:`pystagram.graph_api.components.tags.product_tag.ProductTag` objects to create on the media.
         :type product_tags: List[ProductTag]
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `POST /{media-id}/product_tags` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
@@ -53,7 +53,7 @@ class ProductTags:
         :type media_id: str
         :param product_tags: A list of :class:`pystagram.graph_api.components.tags.product_tag.ProductTag` objects to delete from the media.
         :type product_tags: List[ProductTag]
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `DELETE /{media-id}/product_tags` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

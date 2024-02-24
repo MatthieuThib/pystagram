@@ -16,9 +16,9 @@ class Mentions:
         :type media_id: str
         :param message: The comment message.
         :type message: str
-        :param user_id: The ID of the user to mention, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param user_id: The ID of the user to mention, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type user_id: str, optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `POST /{user-id}/mentions` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`

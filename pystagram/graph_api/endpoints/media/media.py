@@ -24,7 +24,7 @@ class Media:
         :type media_id: str
         :param fields: A list of :class:`pystagram.graph_api.components.fields.media_fields.MediaFields` to get from the media, defaults to None
         :type fields: Optional[List[Union[str, MediaFields]]], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         :return: The response from the `GET /{media-id}` endpoint.
         :rtype: :class:`pystagram.helpers.api_client.api_response.PystagramApiResponse`
@@ -51,7 +51,7 @@ class Media:
         :type media_id: str
         :param comment_enabled: Whether comments are enabled on the media, defaults to True
         :type comment_enabled: Optional[bool], optional
-        :param access_token: The access token of the Instagram user, inferred from the `InstagramGraphApi` instance if None, defaults to None
+        :param access_token: The access token of the Instagram user, inferred from the `PystagramGraphApi` instance if None, defaults to None
         :type access_token: str, optional
         """
         params = {
