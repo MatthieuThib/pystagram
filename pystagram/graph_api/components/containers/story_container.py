@@ -1,3 +1,5 @@
+from typing import Optional
+
 from pystagram.graph_api.components.containers.base_container import BaseContainer
 from pystagram.graph_api.components.media_type.media_type import MediaType
 
@@ -14,9 +16,9 @@ class StoryContainer(BaseContainer):
     """
     def __init__(
         self,
-        image_url: str,
-        video_url: str,
-        reel_url: str
+        image_url: Optional[str] = None,
+        video_url: Optional[str] = None,
+        reel_url: Optional[str] = None
     ):
         """ Initialize a StoryContainer."""
         super().__init__()
