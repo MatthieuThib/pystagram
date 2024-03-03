@@ -1,7 +1,7 @@
 from functools import wraps
 from typing import Callable, Optional
 
-from pystagram.helpers.api_client.api_response import PystagramApiResponse
+from pystagram.helpers.api_client import PystagramApiResponse
 
 
 def cursor_paginated(endpoint_func: Callable[..., PystagramApiResponse]):

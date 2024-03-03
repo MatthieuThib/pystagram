@@ -1,6 +1,6 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.user_fields import UserFields
+from pystagram.components.fields import UserFields
 
 
 class BusinessDiscovery:

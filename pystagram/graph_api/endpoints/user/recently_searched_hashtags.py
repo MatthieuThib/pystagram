@@ -1,6 +1,6 @@
 from typing import Optional
 
-from pystagram.helpers.decorators.cursor_paginated import cursor_paginated
+from pystagram.helpers.decorators import cursor_paginated
 
 
 class RecentlySearchedHashtags:

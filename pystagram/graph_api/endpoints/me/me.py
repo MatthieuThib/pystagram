@@ -1,13 +1,13 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.me_fields import MeFields
+from pystagram.components.fields import MeFields
 from pystagram.graph_api.endpoints.me.accounts import Accounts
 
 
 class Me:
     """ The `Me` node of the Instagram Graph API.
-    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
-    :type graph_api: :class:`InstagramGraphApi`
+    :param graph_api: An instance of the :class:`PystagramGraphApi` class.
+    :type graph_api: :class:`PystagramGraphApi`
     """
     def __init__(self, graph_api: "PystagramGraphApi"):
         """ Initialize the `Me` node of the Instagram Graph API."""

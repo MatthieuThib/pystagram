@@ -1,14 +1,14 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.hashtag_fields import HashtagFields
+from pystagram.components.fields import HashtagFields
 from pystagram.graph_api.endpoints.hashtag.recent_media import RecentMedia
 from pystagram.graph_api.endpoints.hashtag.top_media import TopMedia
 
 
 class Hashtag:
     """ The `Hashtag` node of the Instagram Graph API.
-    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
-    :type graph_api: :class:`InstagramGraphApi`
+    :param graph_api: An instance of the :class:`PystagramGraphApi` class.
+    :type graph_api: :class:`PystagramGraphApi`
     """
     def __init__(self, graph_api: "PystagramGraphApi"):
         """ Initialize the `Hashtag` node of the Instagram Graph API."""

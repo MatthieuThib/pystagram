@@ -1,6 +1,6 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.media_fields import MediaFields
+from pystagram.components.fields import MediaFields
 
 
 class RecentMedia:
@@ -31,4 +31,3 @@ class RecentMedia:
             "access_token": access_token or self.hashtag.graph_api._access_token,
         }
         return self.hashtag.graph_api.api_request(method="GET", endpoint=f"/{hashtag_id}/recent_media", params=params)
-

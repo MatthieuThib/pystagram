@@ -1,10 +1,10 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.metrics.insight_metrics import InsightMetrics
-from pystagram.graph_api.components.periods.periods import Periods
-from pystagram.graph_api.components.strtotime.strtotime import Strtotime
-from pystagram.graph_api.components.timestamp.timestamp import Timestamp
-from pystagram.helpers.decorators.cursor_paginated import cursor_paginated
+from pystagram.components.metrics import InsightMetrics
+from pystagram.components.periods import Periods
+from pystagram.components.strtotime import Strtotime
+from pystagram.components.timestamp import Timestamp
+from pystagram.helpers.decorators import cursor_paginated
 
 
 class Insights:

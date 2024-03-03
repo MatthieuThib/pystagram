@@ -1,6 +1,6 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.user_fields import UserFields
+from pystagram.components.fields import UserFields
 from pystagram.graph_api.endpoints.user.available_catalogs import AvailableCatalogs
 from pystagram.graph_api.endpoints.user.business_discovery import BusinessDiscovery
 from pystagram.graph_api.endpoints.user.catalog_product_search import CatalogProductSearch
@@ -20,8 +20,8 @@ from pystagram.graph_api.endpoints.user.tags import Tags
 
 class User:
     """ The `User` node of the Instagram Graph API.
-    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
-    :type graph_api: :class:`InstagramGraphApi`
+    :param graph_api: An instance of the :class:`PystagramGraphApi` class.
+    :type graph_api: :class:`PystagramGraphApi`
     """
     def __init__(self, graph_api: "PystagramGraphApi"):
         """ Initialize the `User` node of the Instagram Graph API."""

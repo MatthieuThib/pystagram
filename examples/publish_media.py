@@ -1,7 +1,8 @@
 import os
 
 # Importing the necessary modules
-from pystagram.graph_api import PystagramGraphApi, ImageContainer
+from pystagram.components.containers import ImageContainer
+from pystagram.graph_api import PystagramGraphApi
 
 # Initializing the PystagramGraphApi with the necessary credentials
 graph_api = PystagramGraphApi(

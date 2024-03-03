@@ -1,6 +1,6 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.catalog_fields import CatalogFields
+from pystagram.components.fields import CatalogFields
 
 
 class AvailableCatalogs:

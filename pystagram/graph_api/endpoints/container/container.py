@@ -1,13 +1,16 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.container_fields import ContainerFields
-from pystagram.helpers.errors.pystagram_errors import PystagramApiEndpointError, PystagramApiNotSupportedError
+from pystagram.components.fields import ContainerFields
+from pystagram.helpers.errors import (
+    PystagramApiEndpointError,
+    PystagramApiNotSupportedError,
+)
 
 
 class Container:
     """ The `Container` node of the Instagram Graph API.
-    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
-    :type graph_api: :class:`InstagramGraphApi`
+    :param graph_api: An instance of the :class:`PystagramGraphApi` class.
+    :type graph_api: :class:`PystagramGraphApi`
     """
 
     def __init__(self, graph_api: "PystagramGraphApi"):

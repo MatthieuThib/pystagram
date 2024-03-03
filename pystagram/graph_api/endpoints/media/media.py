@@ -1,18 +1,21 @@
 from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.media_fields import MediaFields
+from pystagram.components.fields import MediaFields
 from pystagram.graph_api.endpoints.media.children import Children
 from pystagram.graph_api.endpoints.media.collaborators import Collaborators
 from pystagram.graph_api.endpoints.media.comments import Comments
 from pystagram.graph_api.endpoints.media.insights import Insights
 from pystagram.graph_api.endpoints.media.product_tags import ProductTags
-from pystagram.helpers.errors.pystagram_errors import PystagramApiNotSupportedError, PystagramApiEndpointError
+from pystagram.helpers.errors import (
+    PystagramApiEndpointError,
+    PystagramApiNotSupportedError,
+)
 
 
 class Media:
     """ The `Media` node of the Instagram Graph API.
-    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
-    :type graph_api: :class:`InstagramGraphApi`
+    :param graph_api: An instance of the :class:`PystagramGraphApi` class.
+    :type graph_api: :class:`PystagramGraphApi`
     """
     def __init__(self, graph_api: "PystagramGraphApi"):
         """ Initialize the `Media` node of the Instagram Graph API."""

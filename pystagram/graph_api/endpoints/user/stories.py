@@ -1,6 +1,9 @@
 from typing import Optional
 
-from pystagram.helpers.errors.pystagram_errors import PystagramApiEndpointError, PystagramApiNotSupportedError
+from pystagram.helpers.errors import (
+    PystagramApiEndpointError,
+    PystagramApiNotSupportedError,
+)
 
 
 class Stories:

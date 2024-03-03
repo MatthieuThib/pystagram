@@ -1,6 +1,6 @@
-from typing import Optional, List
+from typing import List, Optional
 
-from pystagram.graph_api.components.tags.product_tag import ProductTag
+from pystagram.components.tags import ProductTag
 
 
 class ProductTags:

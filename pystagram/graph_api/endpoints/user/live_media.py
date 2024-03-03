@@ -1,8 +1,8 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.media_fields import MediaFields
-from pystagram.graph_api.components.strtotime.strtotime import Strtotime
-from pystagram.graph_api.components.timestamp.timestamp import Timestamp
+from pystagram.components.fields import MediaFields
+from pystagram.components.strtotime import Strtotime
+from pystagram.components.timestamp import Timestamp
 
 
 class LiveMedia:

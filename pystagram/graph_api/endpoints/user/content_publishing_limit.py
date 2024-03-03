@@ -1,8 +1,8 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.publishing_limit_fields import PublishingLimitFields
-from pystagram.graph_api.components.strtotime.strtotime import Strtotime
-from pystagram.graph_api.components.timestamp.timestamp import Timestamp
+from pystagram.components.fields import PublishingLimitFields
+from pystagram.components.strtotime import Strtotime
+from pystagram.components.timestamp import Timestamp
 
 
 class ContentPublishingLimit:

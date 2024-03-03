@@ -3,8 +3,8 @@ from typing import Optional
 
 class HashtagSearch:
     """ The `HashtagSearch` node of the Instagram Graph API.
-    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
-    :type graph_api: :class:`InstagramGraphApi`
+    :param graph_api: An instance of the :class:`PystagramGraphApi` class.
+    :type graph_api: :class:`PystagramGraphApi`
     """
     def __init__(self, graph_api: "PystagramGraphApi"):
         """ Initialize the `HashtagSearch` node of the Instagram Graph API."""

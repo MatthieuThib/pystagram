@@ -1,7 +1,7 @@
-from typing import Optional, List
+from typing import List, Optional
 
-from pystagram.graph_api.components.breakdown.breakdown import Breakdown
-from pystagram.graph_api.components.metrics.insight_metrics import InsightMetrics
+from pystagram.components.breakdown import Breakdown
+from pystagram.components.metrics import InsightMetrics
 
 
 class Insights:

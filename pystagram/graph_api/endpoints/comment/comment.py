@@ -1,14 +1,14 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.comment_fields import CommentFields
+from pystagram.components.fields import CommentFields
 from pystagram.graph_api.endpoints.comment.replies import Replies
-from pystagram.helpers.errors.pystagram_errors import PystagramApiNotSupportedError
+from pystagram.helpers.errors import PystagramApiNotSupportedError
 
 
 class Comment:
     """ The `Comment` node of the Instagram Graph API.
-    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
-    :type graph_api: :class:`InstagramGraphApi`
+    :param graph_api: An instance of the :class:`PystagramGraphApi` class.
+    :type graph_api: :class:`PystagramGraphApi`
     """
     def __init__(self, graph_api: "PystagramGraphApi"):
         """ Initialize the `Comment` node of the Instagram Graph API."""

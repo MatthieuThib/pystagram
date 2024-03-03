@@ -1,7 +1,7 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.comment_fields import CommentFields
-from pystagram.helpers.decorators.cursor_paginated import cursor_paginated
+from pystagram.components.fields import CommentFields
+from pystagram.helpers.decorators import cursor_paginated
 
 
 class MentionedComment:

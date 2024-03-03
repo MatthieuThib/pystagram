@@ -1,10 +1,13 @@
 from typing import Any, Dict
 
-from requests import request, HTTPError
+from requests import HTTPError, request
 
-from pystagram.helpers.api_client.api_response import PystagramApiResponse
-from pystagram.helpers.errors.api_errors import PystagramOAuthError, PystagramApiRequestError
-from pystagram.helpers.errors.pystagram_errors import PystagramApiError
+from pystagram.helpers.api_client import PystagramApiResponse
+from pystagram.helpers.errors import (
+    PystagramApiError,
+    PystagramApiRequestError,
+    PystagramOAuthError,
+)
 
 
 class PystagramBaseApiClient:

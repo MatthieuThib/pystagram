@@ -1,6 +1,6 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.account_fields import AccountFields
+from pystagram.components.fields import AccountFields
 
 
 class Accounts:

@@ -1,8 +1,11 @@
 from typing import Optional, Type
 
-from pystagram.graph_api.components.containers.base_container import BaseContainer
-from pystagram.helpers.decorators.cursor_paginated import cursor_paginated
-from pystagram.helpers.errors.pystagram_errors import PystagramApiNotSupportedError, PystagramApiEndpointError
+from pystagram.components.containers.base_container import BaseContainer
+from pystagram.helpers.decorators import cursor_paginated
+from pystagram.helpers.errors import (
+    PystagramApiEndpointError,
+    PystagramApiNotSupportedError,
+)
 
 
 class Media:

@@ -1,6 +1,6 @@
 from typing import Optional
 
-from pystagram.helpers.errors.pystagram_errors import PystagramApiNotSupportedError
+from pystagram.helpers.errors import PystagramApiNotSupportedError
 
 
 class Replies:

@@ -9,16 +9,18 @@ and get basic metadata and metrics about components Instagram Businesses and Cre
 
 from typing import Optional
 
-from pystagram.graph_api.components.fields.account_fields import AccountFields
-from pystagram.graph_api.endpoints.comment.comment import Comment
-from pystagram.graph_api.endpoints.container.container import Container
-from pystagram.graph_api.endpoints.hashtag.hashtag import Hashtag
-from pystagram.graph_api.endpoints.hashtag_search.hashtag_search import HashtagSearch
-from pystagram.graph_api.endpoints.me.me import Me
-from pystagram.graph_api.endpoints.media.media import Media
-from pystagram.graph_api.endpoints.oauth.oauth import Oauth
-from pystagram.graph_api.endpoints.user.user import User
-from pystagram.helpers.api_client.base_api_client import PystagramBaseApiClient
+from pystagram.components.fields import AccountFields
+from pystagram.graph_api.endpoints import (
+    Comment,
+    Container,
+    Hashtag,
+    HashtagSearch,
+    Me,
+    Media,
+    Oauth,
+    User,
+)
+from pystagram.helpers.api_client import PystagramBaseApiClient
 
 
 class PystagramGraphApi(PystagramBaseApiClient):
@@ -33,7 +35,7 @@ class PystagramGraphApi(PystagramBaseApiClient):
     """
 
     BASE_URI: str = "graph.facebook.com"
-    """ The base URL of the Instagram Graph API."""
+    """ The base URI of the Instagram Graph API."""
     API_VERSION: str = "v18.0"
     """ The version of the Instagram Graph API."""
 
@@ -49,7 +51,7 @@ class PystagramGraphApi(PystagramBaseApiClient):
         api_version: Optional[str] = API_VERSION,
     ):
         """ Initialize the Instagram Graph API client."""
-        super().__init__(f"https://{base_uri}/{api_version}")
+        super().__init__(base_url=f"https://{base_uri}/{api_version}")
         self.app_id = app_id
         self.app_secret = app_secret
         self._access_token = access_token

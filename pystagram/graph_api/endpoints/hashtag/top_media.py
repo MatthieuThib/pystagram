@@ -1,6 +1,6 @@
-from typing import Optional, List, Union
+from typing import List, Optional, Union
 
-from pystagram.graph_api.components.fields.media_fields import MediaFields
+from pystagram.components.fields import MediaFields
 
 
 class TopMedia:
