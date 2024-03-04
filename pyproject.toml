@@ -9,7 +9,7 @@ authors = [
   { name="Matthieu THIBAUT", email="matthieu_thibaut@icloud.com" },
 ]
 description = "API wrapper for Instagram APIs"
-readme = "README.md"
+readme = "README.rst"
 license = {file = "LICENSE"}
 requires-python = ">=3.8"
 classifiers = [
