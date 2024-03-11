@@ -1,22 +1,32 @@
-|Banner|
+===========
+ Pystagram
+===========
 
-`Website <https://pystagram.org>`_
+.. image:: https://raw.githubusercontent.com/MatthieuThib/pystagram/main/logo.svg
+   :target: https://github.com/MatthieuThib/pystagram/
+   :alt: Pystagram logo
+   :align: right
+   :width: 30%
+
+
+`Home <https://github.com/MatthieuThib/pystagram>`_
 • `Docs <https://readthedocs.org/projects/pystagram/>`_
 • `PyPi <https://pypi.org/project/pystagram/>`_
 • `Features`_
 • `Installation`_
 • `Usage`_
+• `Contributors`_
 
-|CI| |Python Version| |Coverage| |PyPI| |PyPI Downloads|
+|Python Version|  |GitHub Release| |PyPI| |PyPI Downloads| |Wheel|
 
-|
 
 **Pystagram** is a python client for Instagram APIs.
-It provides a simple and easy to use interface for accessing endpoints of both `Graph API <https://developers.facebook.com/docs/instagram-api>`_ and `Basic Display API <https://developers.facebook.com/docs/instagram-basic-display-api>`_.
+
+It provides a simple and easy to use interface for accessing endpoints of both `Graph <https://developers.facebook.com/docs/instagram-api>`_ and `Basic Display <https://developers.facebook.com/docs/instagram-basic-display-api>`_ APIs.
 
 
 Features
-===========
+=========
 
 * Instagram Graph API:
     *  get and publish instagram media (posts, stories, reels)
@@ -30,10 +40,10 @@ Features
 
 
 Installation
-===========
+=============
 
 PyPI (Python)
--------------
+--------------
 
 |PyPI|
 
@@ -42,9 +52,9 @@ PyPI (Python)
    pip install pystagram
 
 Source Code (Github)
--------------------
+---------------------
 
-|GitHubRealease|
+|GitHub Release|
 
 .. code-block:: bash
 
@@ -54,28 +64,33 @@ Source Code (Github)
 
 
 Usage
-=====
+======
 
 Setup account
--------------
+--------------
 
-In order to use the Instagram APIs (Graph API and Basic Display API), you need to create an app on the `Facebook for Developers <https://developers.facebook.com/>`_ platform and obtain an access token.
+In order to use the Instagram APIs (Graph API and Basic Display API), some prerequisites are required, follow the getting started guide to set up your account and get the necessary credentials:
 
+* `Graph API <https://developers.facebook.com/docs/instagram-api/getting-started>`_
+* `Basic Display API <https://developers.facebook.com/docs/instagram-basic-display-api/getting-started>`_
 
-client id client secret in environment variables
+This will provide you with the following credentials:
 
-Access token
-------------
+* App ID
+* App Secret
+* Access Token
 
-Instagram APIs use access tokens to authenticate requests.
+Instagram APIs use access tokens to authenticate requests. Those tokens are tied to specific permissions and can be generated for different purposes.
+Before calling any endpoint, make sure that the access token has the necessary permissions to request the endpoint.
 
+See the `Permissions <https://developers.facebook.com/docs/permissions>`_ page for more information.
 
 
 Code examples
-------------
+--------------
 
-Graph API
-^^^^^^^^^^^^
+Instagram Graph API
+^^^^^^^^^^^^^^^^^^^^
 
 **Publishing a media**
 
@@ -84,8 +99,8 @@ Graph API
     import os
 
     # Importing the necessary modules
+    from pystagram import PystagramGraphApi
     from pystagram.components.containers import ImageContainer
-    from pystagram.graph_api import PystagramGraphApi
 
     # Initializing the PystagramGraphApi with the necessary credentials
     graph_api = PystagramGraphApi(
@@ -111,8 +126,8 @@ Graph API
 
 
 
-Basic Display API
-^^^^^^^^^^^^
+Instagram Basic Display API
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Fetch user media**
 
@@ -120,7 +135,7 @@ Basic Display API
 
     import os
 
-    from pystagram.basic_display_api import PystagramBasicDisplayApi
+    from pystagram import PystagramBasicDisplayApi
     from pystagram.components.fields import MediaFields
 
     # Instantiate the PystagramBasicDisplayApi class with the necessary credentials
@@ -129,9 +144,6 @@ Basic Display API
         app_secret=os.getenv("APP_SECRET"),  # The App Secret from the environment variables
         access_token=os.getenv("ACCESS_TOKEN"),  # The Access Token from the environment variables
     )
-
-    # Set the maximum number of pages to fetch from the API
-    basic_display_api.MAX_PAGES = 5
 
     # Fetch the user's media from the API
     # The get() method sends a GET request to the API and returns the response
@@ -142,54 +154,37 @@ Basic Display API
 
 
 Paginated endpoints
--------------------
+--------------------
 
 Both APIs feature paginated endpoints, which means that the response of a request can be split into multiple pages. The pystagram library handles this by decorating the endpoints' methods with a custom decorator `@cursor_paginated`. When called, the decorated method will iterate over all the pages until there is no more pages to fetch or the maximum number of pages is reached.
 By default, the maximum number of pages is set to **None** (ie. no limit), but it can be changed by passing setting the attribute **MAX_PAGES** of the class to a different integer value.
 
+.. code-block:: python
+
+    from pystagram import PystagramGraphApi
+
+    # Initializing the PystagramGraphApi with the necessary credentials
+    graph_api = PystagramGraphApi( ... )
+
+    # Set the maximum number of pages to fetch from the API
+    graph_api.MAX_PAGES = 5
+
+    # Request a cursor paginated endpoint
+    response = graph_api.user.media.get()
 
 
+Contributors
+=============
 
+|Contributors|
 
-
-.. |Banner| image:: https://pystagram.org/img/logo-github-readme.png
-   :target: https://pystagram.org
-   :alt: DVC logo
-
-.. |VS Code Extension Overview| image:: https://raw.githubusercontent.com/iterative/vscode-pystagram/main/extension/docs/overview.gif
-   :alt: DVC Extension for VS Code
-
-.. |CI| image:: https://github.com/iterative/pystagram/workflows/Tests/badge.svg?branch=main
-   :target: https://github.com/iterative/pystagram/actions
-   :alt: GHA Tests
-
-.. |Maintainability| image:: https://codeclimate.com/github/iterative/pystagram/badges/gpa.svg
-   :target: https://codeclimate.com/github/iterative/pystagram
-   :alt: Code Climate
+.. |GitHub Release| image:: https://img.shields.io/github/v/release/MatthieuThib/pystagram
+   :target: https://github.com/MatthieuThib/pystagram/releases/latest
+   :alt: GitHub Release
 
 .. |Python Version| image:: https://img.shields.io/pypi/pyversions/pystagram
    :target: https://pypi.org/project/pystagram
    :alt: Python Version
-
-.. |Coverage| image:: https://codecov.io/gh/iterative/pystagram/branch/main/graph/badge.svg
-   :target: https://codecov.io/gh/iterative/pystagram
-   :alt: Codecov
-
-.. |Snap| image:: https://img.shields.io/badge/snap-install-82BEA0.svg?logo=snapcraft
-   :target: https://snapcraft.io/pystagram
-   :alt: Snapcraft
-
-.. |Choco| image:: https://img.shields.io/chocolatey/v/pystagram?label=choco
-   :target: https://chocolatey.org/packages/pystagram
-   :alt: Chocolatey
-
-.. |Brew| image:: https://img.shields.io/homebrew/v/pystagram?label=brew
-   :target: https://formulae.brew.sh/formula/pystagram
-   :alt: Homebrew
-
-.. |Conda| image:: https://img.shields.io/conda/v/conda-forge/pystagram.svg?label=conda&logo=conda-forge
-   :target: https://anaconda.org/conda-forge/pystagram
-   :alt: Conda-forge
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/pystagram.svg?label=pip&logo=PyPI&logoColor=white
    :target: https://pypi.org/project/pystagram
@@ -199,22 +194,10 @@ By default, the maximum number of pages is set to **None** (ie. no limit), but i
    :target: https://pypi.org/project/pystagram
    :alt: PyPI Downloads
 
-.. |Packages| image:: https://img.shields.io/badge/deb|pkg|rpm|exe-blue
-   :target: https://pystagram.org/doc/install
-   :alt: deb|pkg|rpm|exe
+.. |Wheel| image:: https://img.shields.io/pypi/wheel/pystagram
+   :target: https://pypi.org/project/pystagram
+   :alt: PyPI
 
-.. |DOI| image:: https://img.shields.io/badge/DOI-10.5281/zenodo.3677553-blue.svg
-   :target: https://doi.org/10.5281/zenodo.3677553
-   :alt: DOI
-
-.. |Flowchart| image:: https://pystagram.org/img/flow.gif
-   :target: https://pystagram.org/img/flow.gif
-   :alt: how_pystagram_works
-
-.. |Contribs| image:: https://contrib.rocks/image?repo=iterative/pystagram
-   :target: https://github.com/iterative/pystagram/graphs/contributors
+.. |Contributors| image:: https://contrib.rocks/image?repo=MatthieuThib/pystagram
+   :target: https://github.com/MatthieuThib/pystagram/graphs/contributors
    :alt: Contributors
-
-.. |VS Code| image:: https://img.shields.io/visual-studio-marketplace/v/Iterative.pystagram?color=blue&label=VSCode&logo=visualstudiocode&logoColor=blue
-   :target: https://marketplace.visualstudio.com/items?itemName=Iterative.pystagram
-   :alt: VS Code Extension
