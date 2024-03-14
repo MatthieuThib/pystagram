@@ -17,7 +17,7 @@
 • `Usage`_
 • `Contributors`_
 
-|Python Version|  |GitHub Release| |PyPI| |PyPI Downloads| |Wheel|
+|Python Version| |Tag| |GitHub Release| |PyPI| |PyPI Downloads| |Wheel| |License|
 
 
 **Pystagram** is a python client for Instagram APIs.
@@ -178,12 +178,20 @@ Contributors
 
 |Contributors|
 
-.. |GitHub Release| image:: https://img.shields.io/github/v/release/MatthieuThib/pystagram
+.. |License| image:: https://img.shields.io/github/license/MatthieuThib/pystagram?color=blue
+   :target: https://opensource.org/licenses/MIT
+   :alt: License
+
+.. |GitHub Release| image:: https://img.shields.io/badge/github-release-blue?logo=GitHub
    :target: https://github.com/MatthieuThib/pystagram/releases/latest
    :alt: GitHub Release
 
 .. |Python Version| image:: https://img.shields.io/pypi/pyversions/pystagram
    :target: https://pypi.org/project/pystagram
+   :alt: Python Version
+
+.. |Tag| image:: https://img.shields.io/github/v/tag/MatthieuThib/pystagram
+   :target: https://github.com/MatthieuThib/pystagram/tags
    :alt: Python Version
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/pystagram.svg?label=pip&logo=PyPI&logoColor=white
@@ -194,7 +202,7 @@ Contributors
    :target: https://pypi.org/project/pystagram
    :alt: PyPI Downloads
 
-.. |Wheel| image:: https://img.shields.io/pypi/wheel/pystagram
+.. |Wheel| image:: https://img.shields.io/pypi/wheel/pystagram?color=blue
    :target: https://pypi.org/project/pystagram
    :alt: PyPI
 

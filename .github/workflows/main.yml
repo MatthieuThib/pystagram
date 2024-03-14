@@ -1,0 +1,29 @@
+name: "Release Workflow 🚀"
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  call-workflow-check-version:
+    name: "Check versions 🏷️"
+    uses: ./.github/workflows/check-version.yml
+
+  call-workflow-build-dist:
+    name: "Build Python distribution 📦"
+    uses: ./.github/workflows/build-dist.yml
+    needs:
+      - call-workflow-check-version
+
+  call-workflow-github-release:
+    name: "Publish distribution to GitHub Releases 📦"
+    uses: ./.github/workflows/github-release.yml
+    needs:
+      - call-workflow-build-dist
+
+  call-workflow-publish-to-pypi:
+    name: "Publish distribution to PyPI 📦"
+    uses: ./.github/workflows/publish-to-pypi.yml
+    needs:
+      - call-workflow-build-dist

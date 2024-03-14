@@ -1,0 +1,24 @@
+on:
+  workflow_call:
+
+jobs:
+  check-version-number:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Repository 🔄"
+        uses: actions/checkout@v4
+      - name: "Fetch git tag 🏷️"
+        run: |
+          GIT_TAG=$GITHUB_REF_NAME
+          echo "GIT_TAG=$GIT_TAG" >> $GITHUB_ENV
+      - name: "Fetch pyproject.toml version ??"
+        run: |
+          PROJECT_VERSION=`cat pyproject.toml | grep ^version | cut -d '"' -f 2`
+          echo "PROJECT_VERSION=$PROJECT_VERSION" >> $GITHUB_ENV
+      - name: "Compare versions 🔍"
+        run: |
+          if [ "$GIT_TAG" != "$PROJECT_VERSION" ]; then
+          echo "Git tag and pyproject.toml version do not match"
+          echo "Git tag: $GIT_TAG | pyproject.toml version: $PROJECT_VERSION"
+          exit 1
+          fi
