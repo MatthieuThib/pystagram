@@ -1,1 +1,1 @@
-from .authorize import AccessToken
+from .authorize import Authorize
