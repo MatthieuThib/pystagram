@@ -17,7 +17,7 @@
 • `Usage`_
 • `Contributors`_
 
-|Python Version| |Tag| |GitHub Release| |PyPI| |PyPI Downloads| |Wheel| |License|
+|Python Version| |Tag| |GitHub Release| |PyPI| |PyPI Downloads| |Wheel| |GitHub Package| |DockerHub| |License|
 
 
 **Pystagram** is a python client for Instagram APIs.
@@ -201,6 +201,14 @@ Contributors
 .. |PyPI Downloads| image:: https://img.shields.io/pypi/dm/pystagram.svg?color=blue&label=Downloads&logo=pypi&logoColor=gold
    :target: https://pypi.org/project/pystagram
    :alt: PyPI Downloads
+
+.. |GitHub Package| image:: https://img.shields.io/badge/github-package-blue?logo=GitHub
+   :target: https://github.com/MatthieuThib/pystagram/pkgs/container/pystagram
+   :alt: GitHub Package
+
+.. |DockerHub| image:: https://img.shields.io/badge/dockerhub-image-blue?logo=Docker
+   :target: https://hub.docker.com/repository/docker/matthieuthib/pystagram/general
+   :alt: GitHub Package
 
 .. |Wheel| image:: https://img.shields.io/pypi/wheel/pystagram?color=blue
    :target: https://pypi.org/project/pystagram

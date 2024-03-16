@@ -1,0 +1,24 @@
+on:
+  workflow_call:
+
+jobs:
+  github-package:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: "Download Docker image ⬇️"
+        uses: actions/download-artifact@v2
+        with:
+          name: docker-image
+      - name: "Load Docker image 💾"
+        run: docker load --input "${{ github.event.repository.name }}.tar"
+      - name: "Login to GitHub Container Registry 🔑"
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GITHUB_TOKEN}}
+      - name: "Tag Docker image 🏷"
+        run: docker tag ${{ github.event.repository.name }}:$GITHUB_REF_NAME "ghcr.io/matthieuthib/${{ github.event.repository.name }}:$GITHUB_REF_NAME"
+      - name: "Push to GitHub Container Registry 🚀"
+        run: docker push "ghcr.io/matthieuthib/${{ github.event.repository.name }}:$GITHUB_REF_NAME"

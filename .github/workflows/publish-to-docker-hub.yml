@@ -1,0 +1,28 @@
+on:
+  workflow_call:
+
+env:
+  NAME: pystagram
+  TAG: latest
+
+jobs:
+  publish-to-docker-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Repository 🔄"
+        uses: actions/checkout@v4
+      - name: "Download Docker image ⬇️"
+        uses: actions/download-artifact@v2
+        with:
+          name: docker-image
+      - name: "Load Docker image 💾"
+        run: docker load --input "${{ github.event.repository.name }}.tar"
+      - name: "Tag Docker image 🏷️"
+        run: docker tag "${{ github.event.repository.name }}:$GITHUB_REF_NAME" "matthieuthib/${{ github.event.repository.name }}:$GITHUB_REF_NAME"
+      - name: "Login to DockerHub 🔑"
+        env:
+          DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
+          DOCKER_HUB_ACCESS_TOKEN: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+        run: docker login -u "${DOCKER_HUB_USER}" -p "${DOCKER_HUB_ACCESS_TOKEN}"
+      - name: "Push image to DockerHub 🚀"
+        run: docker push "matthieuthib/${{ github.event.repository.name }}:$GITHUB_REF_NAME"

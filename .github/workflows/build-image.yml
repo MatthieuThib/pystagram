@@ -1,0 +1,25 @@
+on:
+  workflow_call:
+
+jobs:
+  build:
+    name: "Build Docker Image 🐳"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Repository 🔄"
+        uses: actions/checkout@v4
+      -   name: "Fetch git tag 🏷️"
+          run: |
+            GIT_TAG=$GITHUB_REF_NAME
+            echo "GIT_TAG=$GIT_TAG" >> $GITHUB_ENV
+      - name: "Build image 🛠"
+        run: |
+          docker build --tag ${{ github.event.repository.name }}:"$GIT_TAG" .
+      - name: "Save image 💾"
+        run: docker save --output "${{ github.event.repository.name }}.tar" ${{ github.event.repository.name }}:"$GIT_TAG"
+      - name: "Upload image 📤"
+        uses: actions/upload-artifact@v2
+        with:
+          name: docker-image
+          path: "${{ github.event.repository.name }}.tar"
+          retention-days: 1
